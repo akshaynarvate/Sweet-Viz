@@ -18,7 +18,7 @@ st.set_page_config(page_title="The Sweetviz App", layout="wide")
 
 #---------------------------------#
 # Model building
-df build_model(df):
+def build_model(df):
     df = df.loc[:] # Having a look at the all column
     X = df.iloc[:, :-1] # Using all column except for the last column as X
     Y = df.iloc[:,-1] # Selecting the last column as Y
