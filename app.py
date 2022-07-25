@@ -42,7 +42,7 @@ def build_model(df):
 
     # Analyzing the dataset using Sweetviz library
     train_report = sweetviz.analyze([predictions_train, "Train"], target_feat=Y)
-    comparison_report = sweetviz.compare([predictions_train, "Train"], [predictions_test, "Test"], "target_feat=Y)
+    comparison_report = sweetviz.compare([predictions_train, "Train"], [predictions_test, "Test"], target_feat=Y)
     
     st.subheader("2. The Sweetviz report")
     
