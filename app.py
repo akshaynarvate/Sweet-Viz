@@ -91,6 +91,12 @@ with st.sidebar.header('1. Upload your CSV data'):
 [Example CSV input file](https://github.com/akshaynarvate/Future-Sales-Prediction/blob/main/future_sales_predicton.csv)
 """)
 
+# Sidebar - Specify parameter settings
+with st.sidebar.header('2. Set Parameters'):
+    split_size = st.sidebar.slider('Data split ratio (% for Training Set)', 10, 90, 80, 5)
+    seed_number = st.sidebar.slider('Set the random seed number', 1, 100, 42, 1)
+
+
 #---------------------------------#
 # Main panel
 
