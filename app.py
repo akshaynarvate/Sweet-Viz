@@ -37,7 +37,7 @@ def build_model(df):
     
     # Using sweetviz model
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y,test_size = split_size,random_state = seed_number)
-    predictions_train = (X_train Y_train)
+    predictions_train = (X_train, Y_train)
     predictions_test = (X_test, Y_test)
 
     # Analyzing the dataset using Sweetviz library
