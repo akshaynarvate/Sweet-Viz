@@ -31,7 +31,7 @@ def build_model(df):
 
     st.markdown('**1.3. Variable details**:')
     st.write('X variable (All are shown)')
-    st.info(list(X.columns[:, :-1]))
+    st.info(list(X.columns[:]))
     st.write('Y variable')
     st.info(Y.name)
     
