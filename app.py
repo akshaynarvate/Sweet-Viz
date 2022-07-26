@@ -48,11 +48,11 @@ def build_model(df):
     
     # Creating a whole report in the form of HTML file
     st.write("Train set Sweetviz report")
-    st.markdown(filedownload(train_report.show_html("Report.html"), unsafe_allow_html=True)
+    st.write(filedownload(train_report.show_html("Report.html"), unsafe_allow_html=True)
     
     # Comparing the training and testing dataset using Sweetviz
     st.write("Comparing Train & Test dataset Sweetviz report")
-    st.markdown(filedownload(comparison_report.show_html("Comparison.html"), unsafe_allow_html=True)
+    st.write(filedownload(comparison_report.show_html("Comparison.html"), unsafe_allow_html=True)
     
 # Download html file data
 # https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
